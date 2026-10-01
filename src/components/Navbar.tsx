@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Music, BookmarkCheck, Crown, ShieldAlert, LogIn, LogOut, Sparkles, Download } from 'lucide-react';
+import { Search, Music, BookmarkCheck, Crown, ShieldAlert, LogIn, LogOut, Sparkles } from 'lucide-react';
 import { UserSubscription, UserAccount } from '../types/donghua';
 import { toPersianDigits } from '../utils/farsiDigits';
 
@@ -128,17 +128,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span>خرید اشتراک</span>
             </button>
           )}
-
-          {/* Download Project Source Code ZIP */}
-          <a
-            href="/donghua-stream-app.zip"
-            download="donghua-stream-app.zip"
-            title="دانلود سورس کد کامل پروژه (فایل ZIP)"
-            className="hidden sm:flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-semibold text-emerald-300 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/25 rounded-xl transition-all"
-          >
-            <Download className="w-3.5 h-3.5 text-emerald-400" />
-            <span>دانلود ZIP</span>
-          </a>
 
           {/* Search Button */}
           <button

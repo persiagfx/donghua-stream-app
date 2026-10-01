@@ -1,5 +1,4 @@
 import React from 'react';
-import { Download } from 'lucide-react';
 
 interface FooterProps {
   onNavigate: (tab: 'home' | 'schedule' | 'archive' | 'realms') => void;
@@ -25,16 +24,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </p>
             <div className="text-xs text-emerald-400/90 font-sans">
               پلتفرم استریم و دانشنامه تخصصی شیان‌شیا و دونگهوا
-            </div>
-            <div className="pt-2">
-              <a
-                href="/donghua-stream-app.zip"
-                download="donghua-stream-app.zip"
-                className="inline-flex items-center gap-2 px-3.5 py-2 text-xs font-bold text-emerald-300 bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 rounded-xl transition-all shadow-sm shadow-emerald-950"
-              >
-                <Download className="w-4 h-4 text-emerald-400" />
-                <span>دانلود سورس کد کامل پروژه (فایل ZIP)</span>
-              </a>
             </div>
           </div>
 
