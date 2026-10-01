@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-vazir: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+    --font-cinzel: 'Cinzel', serif;
+    --font-outfit: 'Outfit', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-vazir);
+    background-color: #07090e;
+    color: #f1f3f7;
+  }
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-outfit {
+  font-family: var(--font-outfit);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0e14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2737;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+/* Danmaku text shadow and animation */
+.danmaku-text {
+  text-shadow: 1px 1px 2px #000, 0 0 5px rgba(0,0,0,0.8);
+}
+
+@keyframes danmaku-move {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
+
+.animate-danmaku {
+  animation: danmaku-move linear forwards;
+}
+
+/* Ethereal background gradient mesh */
+.bg-mesh-celestial {
+  background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.08) 0%, transparent 60%),
+              radial-gradient(circle at 10% 30%, rgba(245, 158, 11, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 90% 70%, rgba(59, 130, 246, 0.04) 0%, transparent 50%),
+              #07090e;
+}
+
+/* Glassmorphism surface */
+.glass-panel {
+  background: rgba(14, 18, 27, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-panel-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(20, 26, 38, 0.9);
+  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.15);
+}

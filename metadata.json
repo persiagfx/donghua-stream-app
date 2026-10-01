@@ -1,0 +1,6 @@
+{
+  "name": "XianRealm Donghua | پایگاه انیمه چینی",
+  "description": "زیباترین پلتفرم تماشا، دانشنامه و رسانه انیمه‌های چینی (دونگهوا) همراه با پخش آنلاین، سیستم دانماکو، سطوح تزکیه شیان‌شیا و جدول پخش هفتگی",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
