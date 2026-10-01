@@ -1,6 +1,6 @@
 import { Donghua, CultivationRealm, SubscriptionPlan } from '../types/donghua';
 
-const banner = (name: string) => `${import.meta.env.BASE_URL}banners/${name}.webp?v=2`;
+const banner = (name: string) => `${import.meta.env.BASE_URL}banners/${name}.webp?v=3`;
 const poster = (name: string) => `${import.meta.env.BASE_URL}posters/${name}.webp`;
 
 export const SUBSCRIPTION_PLANS: SubscriptionPlan[] = [
